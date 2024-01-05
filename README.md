@@ -1,5 +1,7 @@
 # Apex Legends Superglide Trainer: Meaty Edition
 
+This fork provides the same functionality as the original version https://github.com/AngryGroceries/Apex_Superglide_Practice_Tool while adding the convenience of not having to run a PowerShell instance manually every time you wish to run the script. It also saves your settings between reloads, fixes a minor bug, and features a neat icon.
+
 Original authors:
 
 JayTheYggdrasil @ https://github.com/JayTheYggdrasil
