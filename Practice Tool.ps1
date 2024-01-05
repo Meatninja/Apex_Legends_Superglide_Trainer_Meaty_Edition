@@ -20,17 +20,52 @@ $lastState = [states]::Jump
 
 "!! Use CTRL+C to quit !!" 
 "-- Setup --"
-"Press the key you use for jump."
-$jumpkey = $Host.UI.RawUI.ReadKey()
+if (!(Test-Path -Path .\Settings\))
+{
+	"Settings directory not present. Creating directory."
+	""
+	New-Item -Path .\ -Name "Settings" -ItemType Directory
+	""
+	"Settings directory successfully created."
+	""
+}
+if (Test-Path -Path .\Settings\jumpkey.txt)
+{
+	"Jump key already set. Delete file jumpkey.txt in C:\Apex Legends Superglide Trainer\Settings to reset."
+	$jumpkey = Get-Content -Path .\Settings\jumpkey.txt
+}
+else
+{
+	"Press the key you use for jump."
+	$jumpkey = $Host.UI.RawUI.ReadKey().VirtualKeyCode
+	Add-Content -Path .\Settings\jumpkey.txt -Value $jumpkey
+}
 ""
-"Press the key you use for crouch."
-$duckkey = $Host.UI.RawUI.ReadKey()
+if (Test-Path -Path .\Settings\crouchkey.txt)
+{
+	"Crouch key already set. Delete file crouchkey.txt in C:\Apex Legends Superglide Trainer\Settings to reset."
+	$crouchkey = Get-Content -Path .\Settings\crouchkey.txt
+}
+else
+{
+	"Press the key you use for crouch."
+	$crouchkey = $Host.UI.RawUI.ReadKey().VirtualKeyCode
+	Add-Content -Path .\Settings\crouchkey.txt -Value $crouchkey
+}
 ""
-
-write-host -nonewline "Enter your framerate: "
-$inputString = read-host
-$targetfps = $inputString -as [Double]
-
+if (Test-Path -Path .\Settings\targetfps.txt)
+{
+	"Target FPS already set. Delete file targetfps.txt in C:\Apex Legends Superglide Trainer\Settings to reset."
+	$targetfps = Get-Content -Path .\Settings\targetfps.txt
+}
+else
+{
+	write-host -nonewline "Enter your framerate: "
+	$inputString = read-host
+	$targetfps = $inputString -as [Double]
+	Add-Content -Path .\Settings\targetfps.txt -Value $targetfps
+}
+""
 write-host -nonewline "Jump + crouch must be exactly 1 frame apart for the highest chance at superglide success."
 
 $frameTime = 1 / $targetfps
@@ -77,10 +112,10 @@ while ($loop -eq "true") {
    $lastState = $state
 
    # Get input
-   $key = $Host.UI.RawUI.ReadKey()
+   $key = $Host.UI.RawUI.ReadKey().VirtualKeyCode
 
    # State Transitions
-   if ($key -eq $duckkey) {
+   if ($key -eq $crouchkey) {
       if($state -eq [states]::Ready) {
          # Crouched First
          Write-Host -ForegroundColor Yellow " Key Pressed (Crouch)"
