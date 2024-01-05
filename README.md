@@ -25,7 +25,7 @@ Mokeysniper @ https://www.youtube.com/@Mokeysniper for giving permission to use 
 
 2. Extract the contents of the .zip file (it contains 1 appropriately named folder) into the root of your C drive. When done, all files should be in "C:\Apex Legends Superglide Trainer\".
 
-3. (optional) Move the shortcut (the file with the green arrow icon) from the extracted folder to your desktop.
+3. (optional) Move the shortcut (the shortcut is called "Apex Legends Superglide Trainer" and has a green arrow as its icon) from the extracted folder to your desktop.
 
 4. Run the shortcut. Done.
 
