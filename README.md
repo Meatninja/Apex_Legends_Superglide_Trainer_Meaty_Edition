@@ -21,10 +21,14 @@ Mokeysniper @ https://www.youtube.com/@Mokeysniper for giving permission to use 
 
 ## How to use
 
-1. Download the file ALST_ME_vX.X.zip from the newest release in the [Releases section](https://github.com/Meatninja/Apex_Legends_Superglide_Trainer_Meaty_Edition/releases). Please note: do NOT press Code -> Download ZIP on the main page, and do NOT download the source code. Just get the .zip file from Releases. This shouldn't matter much right now, but might matter in future versions.
+1. Download the file ALST_ME_vX.X.zip from the newest release in the [Releases section](https://github.com/Meatninja/Apex_Legends_Superglide_Trainer_Meaty_Edition/releases).
+
+   Please note: do NOT press Code -> Download ZIP on the main page, and do NOT download the source code. Just get the .zip file from Releases. This shouldn't matter much right now, but might matter in future versions.
 2. Extract the contents of the .zip file (it contains 1 appropriately named folder) into the root of your C drive (that is, directly into "C:"). When done, all files should be in "C:\Apex Legends Superglide Trainer".
 3. (optional) Move the shortcut (the shortcut is called "Apex Legends Superglide Trainer" and has a green arrow as its icon) from the extracted folder to your desktop.
-4. Run the shortcut. Don't try to run the .ps1 file, the .bat file or anything else. Whenever you want to run the script again in the future, you just have to run the shortcut again.
+4. Run the shortcut. Whenever you want to run the script again in the future, you just have to run the shortcut again.
+
+   Please note: do NOT try to run the .ps1 file, the .bat file or anything else. It might not work as expected.
 5. Follow the on-screen instructions within the window that appears. This tool is meant to be used *within the script's window*, not in Apex Legends itself. If nothing happens when you run the shortcut or you get some kind of error, follow the Troubleshooting steps below.
 
 ## Troubleshooting
