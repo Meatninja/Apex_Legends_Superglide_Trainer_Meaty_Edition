@@ -30,7 +30,7 @@ Mokeysniper @ https://www.youtube.com/@Mokeysniper for giving permission to use 
 4. Run the shortcut. Done.
 
 
-For now only tested on my own PC. If issues arise, they're probably related to your PowerShell configuration. Try installing [PowerShell 7.X](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.msi) and if that still doesn't work, it's probably an [execution policy issue](https://adamtheautomator.com/run-powershell-script/).
+For now only tested on a few PCs. If issues arise, they're probably related to your PowerShell configuration. Try installing [PowerShell 7.4](https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/PowerShell-7.4.0-win-x64.msi) and if that still doesn't work, it's probably an [execution policy issue](https://adamtheautomator.com/run-powershell-script/).
 
 
-Pressing "Ctrl + C" within the PowerShell window will terminate the script when you are finished, or you can exit out of PowerShell by clicking the X in the top right of the window.
+Pressing "Ctrl + C" within the script's window will terminate (exit) the script, or you can exit out of the window by clicking the X in the top right.
